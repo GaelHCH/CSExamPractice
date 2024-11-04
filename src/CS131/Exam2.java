@@ -1,11 +1,16 @@
 package CS131;
 
 public class Exam2 {
+    public int a;
     public static void main(String[] args) {
         String[] s = {"helofwefef", "helo", "helahgaisehgo", "helfsdfo"};
         int[] test;
         test = new int[]{24,42,4};
         int total;
+
+        Exam2 e = new Exam2();
+
+        System.out.println(e.a);
 
         System.out.println("Expected: " + longestStr(s));
         System.out.println("Actual: " + longestStr2(s));
@@ -35,4 +40,5 @@ public class Exam2 {
         }
         return s[maxIndex];
     }
+
 }
